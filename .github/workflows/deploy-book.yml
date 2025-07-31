@@ -32,6 +32,11 @@ jobs:
       run: |
         pip install -r book/requirements.txt
 
+    # Update the headers 
+    - name: Update headers
+      run: |
+        python book/edit_headers.py pt
+
     # Build the book
     - name: Build the book
       run: |
